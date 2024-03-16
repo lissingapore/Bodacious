@@ -1,0 +1,22 @@
+
+<html lang="en">
+    <body>
+    <div class="container lead">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+          <div class="col-md-3 mb-2 mb-md-0">
+            <a href="static/faviconio-logo/logo.svg" class="d-inline-flex link-body-emphasis text-decoration-none">
+              <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="static/faviconio-logo/logo.svg"></use></svg>
+            </a>
+          </div>
+
+          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="{{ url_for('welcome') }}" class="nav-link px-2 link-secondary">Welcome</a></li>
+            <li><a href="{{ url_for('products') }}" class="nav-link px-2">Products</a></li>
+            <li><a href="{{ url_for('pricing') }}" class="nav-link px-2">Pricing</a></li>
+            <li><a href="{{ url_for('contact')}}" class="nav-link px-2">Contact Us</a></li>
+          </ul>
+
+        </header>
+    </div>
+    </body>
+</html>

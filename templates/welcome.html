@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+<body xmlns="http://www.w3.org/1999/html">
+    {% block content %}
+       <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="col-lg-6 text-center text-lg-start">
+            <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Welcome!</h1>
+            <p class="col-lg-10 fs-4">This is Bodacious Bakes, we are a home-based bakery, striving to make quality baked
+            goods, common place.</p>
+            <p class="col-lg-10 fs-4">We offer <em><b>freshly baked, preservative-free baked goods</b></em> that are a treat for your
+                  tastebuds.</p>
+            <p class="col-lg-10 fs-4">Browse our catalogue, purchase any product that suits your fancy, you will
+                  relish every bite! We invite you to <em><b>"Taste and See"</b></em></p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button type="button" class="btn btn-warning btn-lg px-4 me-md-2"><a href="{{ url_for('products') }}">Our Products</a></button>
+                <button type="button" class="btn btn-outline-info btn-lg px-4"><a href="{{ url_for('contact') }}">Order Now</a></button>
+            </div>
+          </div>
+
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="static/images/GOGA-87.JPG" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+    {% endblock %}
+</body>

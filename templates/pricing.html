@@ -1,0 +1,199 @@
+{% extends "base.html" %}
+    {% block content %}
+        <div class="px-4 py-5 my-5 text-center">
+            <img class="d-block mx-auto mb-4" src="static/images/collage_bread-cake-loaf-cookies.png" alt="" width="180" height="150">
+            <h1 class="display-5 fw-bold text-body-emphasis lead">Pricing for our baked goods</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4"><b>This is the Bodacious Bakes pricing list; for items not included, our customers are requested
+                  to submit an inquiry using the <a href="{{ url_for('contact') }}">order form</a>, and they will be
+                  consulted to better ascertain their needs. <em>Please note that the prices for our products are
+                      subject to change without prior notice!</em></b></p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" class="btn btn-success-light btn-lg px-4 gap-3"><a href="{{ url_for('contact') }}">Order Now</a></button>
+              </div>
+            </div>
+        </div>
+        <div class="container lead">
+            <div class="row justify-content-between">
+                  <div class="col-2">
+                      <div class="p-3">
+                          <div class="card" style="width: 18rem;">
+                              <div class="card-header py-3 text-bg-success border-success">
+                                  <h4>OatBran Cookies</h4>
+                              </div>
+                              <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><b>250g Tin</b></li>
+                                <li class="list-group-item"><b>500g Tin</b></li>
+                                <li class="list-group-item"><b>1000g Tin</b></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-2">
+                      <div class="p-3">
+                          <div class="card" style="width: 18rem;">
+                              <div class="card-header py-3 text-bg-secondary-outline border-secondary-outline">
+                                <h4>Price</h4>
+                              </div>
+                              <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a href="{{ url_for('contact') }}"><b>Ushs. 15,000/-</b></a></li>
+                                <li class="list-group-item"><a href="{{ url_for('contact') }}"><b>Ushs. 25,000/-</b></a></li>
+                                <li class="list-group-item"><a href="{{ url_for('contact') }}"><b>Ushs. 40,000/-</b></a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-2">
+                      <div class="p-3">
+                          <div class="card" style="width: 18rem;">
+                              <div class="card-header py-3 text-bg-success border-success">
+                                <h4>Gluten-free Cookies</h4>
+                              </div>
+                              <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><b>5No. Packet</b></li>
+                                <li class="list-group-item"><b>10No. Packet</b></li>
+                                <li class="list-group-item"><b>20No. Packet</b></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-2">
+                      <div class="p-3">
+                          <div class="card" style="width: 18rem;">
+                              <div class="card-header py-3 text-bg-secondary-outline border-secondary-outline">
+                                <h4>Price</h4>
+                              </div>
+                              <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a href="{{ url_for('contact') }}"><b>Ushs. 8,000/-</b></a></li>
+                                <li class="list-group-item"><a href="{{ url_for('contact') }}"><b>Ushs. 15,000/-</b></a></li>
+                                <li class="list-group-item"><a href="{{ url_for('contact') }}"><b>Ushs. 30,000/-</b></a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+            </div>
+        </div>
+        <div class="container lead">
+            <div class="row justify-content-between">
+                  <div class="col-2">
+                      <div class="p-3">
+                          <div class="card" style="width: 18rem;">
+                              <div class="card-header py-3 text-bg-success border-success">
+                                  <h4>CupCakes</h4>
+                              </div>
+                              <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><b>4No. Box</b></li>
+                                <li class="list-group-item"><b>6No. Box</b></li>
+                                <li class="list-group-item"><b>8No. Bouquet</b></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-2">
+                      <div class="p-3">
+                          <div class="card" style="width: 18rem;">
+                              <div class="card-header py-3 text-bg-secondary-outline border-secondary-outline">
+                                <h4>Price</h4>
+                              </div>
+                              <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><b><a href="{{ url_for('contact') }}">Ushs. 20,000/-</a></b></li>
+                                <li class="list-group-item"><b><a href="{{ url_for('contact') }}">Ushs. 30,000/-</a></b></li>
+                                <li class="list-group-item"><b><a href="{{ url_for('contact') }}">Ushs. 50,000/-</a></b></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-2">
+                      <div class="p-3">
+                          <div class="card" style="width: 18rem;">
+                              <div class="card-header py-3 text-bg-success border-success">
+                                <h4>Custom Made Cakes</h4>
+                              </div>
+                              <img src="static/images/IMG_0233.JPG" class="card-img-top" alt="...">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-2">
+                      <div class="p-3">
+                          <div class="card" style="width: 18rem;">
+                              <div class="card-body">
+                                <h4 class="card-title">Price</h4>
+                                <p class="card-text">Fill out an order form to get pricing for custom made cakes</p>
+                                <a href="{{ url_for('contact') }}" class="btn btn-success">Order Now</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+            </div>
+        </div>
+
+        <div class="container lead">
+            <div class="row justify-content-between">
+                  <div class="col-2">
+                      <div class="p-3">
+                          <div class="card" style="width: 18rem;">
+                              <div class="card-header py-3 text-bg-success border-success">
+                                <h4>Wholewheat Bread</h4>
+                              </div>
+                              <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><b>8No, rolls</b></li>
+                                <li class="list-group-item"><b>1Kg loaf</b></li>
+                                <li class="list-group-item"><b>1.5 Kg loaf</b></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-2">
+                      <div class="p-3">
+                          <div class="card" style="width: 18rem;">
+                              <div class="card-header py-3 text-bg-secondary-outline border-secondary-outline">
+                                <h4>Price</h4>
+                              </div>
+                              <ul class="list-group list-group-flush">
+                                  <li class="list-group-item"><b><a href="{{ url_for('contact') }}">Ushs. 6,000/-</a></b></li>
+                                <li class="list-group-item"><b><a href="{{ url_for('contact') }}">Ushs. 6,000/-</a></b></li>
+                                <li class="list-group-item"><b><a href="{{ url_for('contact') }}">Ushs. 8,000/-</a></b></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-2">
+                      <div class="p-3">
+                          <div class="card" style="width: 18rem;">
+                              <div class="card-header py-3 text-bg-success border-success">
+                                <h4>Loaf Cakes</h4>
+                              </div>
+                              <ul class="list-group list-group-flush">
+                                  <li class="list-group-item"><b>1Kg Chocolate Marble Cake</b></li>
+                                  <li class="list-group-item"><b>1Kg RedVelvet Marble Cake</b></li>
+                                  <li class="list-group-item"><b>1Kg Banana Nut Cake</b></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-2">
+                      <div class="p-3">
+                          <div class="card" style="width: 18rem;">
+                              <div class="card-header py-3 text-bg-secondary-outline border-secondary-outline">
+                                <h4>Price</h4>
+                              </div>
+                              <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a href="{{ url_for('contact') }}"><b>Ushs. 30,000/-</b></a></li>
+                                <li class="list-group-item"><a href="{{ url_for('contact') }}"><b>Ushs. 30,000/-</b></a></li>
+                                <li class="list-group-item"><a href="{{ url_for('contact') }}"><b>Ushs. 25,000/-</b></a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+            </div>
+        </div>
+        <div class="container lead">
+            <div class="overflow-hidden" style="max-height: 30vh;" >
+              <div class="container px-5">
+                <img src="static/images/collage_facebook.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image"
+                     height="500" loading="lazy">
+              </div>
+            </div>
+        </div>
+    {% endblock content %}
+

@@ -1,0 +1,166 @@
+{% extends "base.html" %}
+  <body>
+  {% block content %}
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="display-5 fw-bold text-body-emphasis lead "><b>Our Product Catalogue</b></h1>
+          <p class="lead text-body-secondary"><b>Our Bakery offers a variety of baked goods, including custom-made theme
+            cakes, cookies and bread. The servings, flavors, fillings and frostings for the custom-made cakes are
+            discussed in more detail with the client when they contact us.</b></p>
+          <p>
+            <a href="{{ url_for('contact') }}" class="btn btn-success my-2">Order Now</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static lead">
+              <strong class="d-inline-block mb-2 text-success-emphasis"><em>Cakes</em></strong>
+              <h3 class="mb-0">Engagement Cake</h3>
+              <p class="card-text mb-auto">Our custom made cakes are made to suit any occassion, Birthdays, Engagement
+                Parties, Bridal and/or Baby Showers.</p>
+              <a href="{{ url_for('contact') }}" class="icon-link gap-1 icon-link-hover stretched-link">
+                Order Now
+                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="static/images/kwanjula.png"  width="200" height="250" alt="Custom Made Cakes" >
+              <rect width="100%" height="100%" ></rect>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static lead">
+              <strong class="d-inline-block mb-2 text-success-emphasis"><em>Cookies</em></strong>
+              <h3 class="mb-0">Oat Bran Cookies</h3>
+              <p class="mb-auto">Our oat bran cookies are a firm favourite with our clients, perfect as a snack for your
+                kids or teatime party with friends!</p>
+              <a href="{{ url_for('contact') }}" class="icon-link gap-1 icon-link-hover stretched-link">
+                Order Now
+                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="static/images/oat-bran.png"  width="180" height="250" alt="OatBran Cookies" >
+              <rect width="100%" height="100%" ></rect>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-md-stretch">
+          <div class="col-md-6">
+            <div class="h-100 p-5 text lead rounded-3">
+              <div class="row">
+                <div class="col-5">
+                  <img src="static/images/gluten-free-cookies.png"  width="200" height="250" alt="Gluten free oats ccokies" >
+                </div>
+                <div class="col-7">
+                  <h3>Gluten and Sugar free Oats Cookies</h3>
+                  <p>These oats cookies are crunchy, mildly sweet, with a nutty flavor; oats is the signature
+                    alternative gluten free flour, among others. It is perfect for those who have gluten intolerence and/or
+                    avoiding spiking their sugar levels.
+                  </p>
+                  <button class="btn btn-outline-success" type="button"><a href="{{ url_for('contact') }}">Order Now</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="h-100 p-5 text lead rounded-3">
+              <div class="row">
+                <div class="col-5">
+                  <img src="static/images/banana_nut.png"  width="200" height="250" alt="Gluten free cake loaf" >
+                </div>
+                <div class="col-7">
+                  <h3>Gluten free cake loaf</h3>
+                  <p>
+                    Banana Nut Cake Loaf, also perfect for those with gluten intolerence.
+                  </p>
+                  <button class="btn btn-outline-success" type="button"><a href="{{ url_for('contact') }}">Order Now</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-2 lead">
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary-emphasis"><em>Pastries</em></strong>
+                <h3 class="mb-0">Mince Fruit Pies</h3>
+                <p class="card-text mb-auto">Flaky buttery crust with a filling of raisins and sultanas marianated in a blend of
+                rum, lemon and orange juices; the filling can also be savory. </p>
+                <a href="{{ url_for('contact') }}" class="icon-link gap-1 icon-link-hover stretched-link">
+                  Order Now
+                  <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                </a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="static/images/mince pies.png"  width="180" height="280" alt="Mince Fruit Pies" >
+                <rect width="100%" height="100%" ></rect>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success-emphasis"><em>Bread</em></strong>
+                <h3 class="mb-0">Chocolate Babka Muffins</h3>
+                <p class="mb-auto">Chocolate Babka is a delicious fluffy bread dough that has swirls of a sugary
+                  chocolate-cinnamon filling running throughout it; can be baked as a muffin or braided loaf</p>
+                <a href="{{ url_for('contact') }}" class="icon-link gap-1 icon-link-hover stretched-link">
+                  Order Now
+                  <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                </a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="static/images/baklava-2.png"  width="180" height="280" alt="Baklava Muffins" >
+                <rect width="100%" height="100%" ></rect>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-md-stretch">
+            <div class="col-md-6">
+              <div class="h-100 p-5 text lead rounded-3">
+                <div class="row">
+                  <div class="col-5">
+                    <img src="static/images/sliced_bread_2.JPG"  width="200" height="250" alt="whole wheat sliced bread" >
+                  </div>
+                  <div class="col-7">
+                    <h3>Whole Wheat Sliced Bread</h3>
+                    <p>This bread is made with whole wheat flour reconstituted with all purpose and bran ratios that
+                      suit our client's tastebuds; we use a sponge preferment to infuse added flavor to the bread, and our
+                      clients are happy!
+                    </p>
+                    <button class="btn btn-outline-success" type="button"><a href="{{ url_for('contact') }}">Order Now</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <div class="col-md-6">
+            <div class="h-100 p-5 text lead rounded-3">
+              <div class="row">
+                <div class="col-5">
+                  <img src="static/images/challah.JPG"  width="200" height="250" alt="Challah" >
+                </div>
+                <div class="col-7">
+                  <h3>Challah Bread</h3>
+                  <p>An enriched sweet bread usually braided, typically eaten on major Jewish Holidays! We bake it
+                    for our clients who celebrate these holidays e.g. the Jewish New Year
+                  </p>
+                  <button class="btn btn-outline-success" type="button"><a href="{{  url_for('contact') }}">Order Now</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  {% endblock %}

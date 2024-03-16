@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% from "bootstrap5/form.html" import render_form %}
+
+    {% block content %}
+        <div class="container lead">
+            <div class="row">
+                <div class="col-6 p-5 lead">
+                    <h2>Place your order!</h2>
+                        {{ render_form(form) }}
+                </div>
+                <div class="col-6">
+                    <div class="row">
+                        <div class="h-100 p-5 text-bg-light rounded-3 col-12">
+                          <h2>Frequently Asked Questions (FAQ)</h2>
+                          <p>These are some of the questions posed by clients making inquiries about our products.</p>
+                          <button class="btn btn-warning" type="button"><a href="{{ url_for('contact') }}">Order Now!</a></button>
+                        </div>
+                        <div class="col-12">
+                            <div class="list-group">
+                                <label class="list-group-item d-flex gap-3">
+                                  <input class="form-check-input flex-shrink-0" type="checkbox" value="" checked="" style="font-size: 1.375em;">
+                                  <span class="pt-1 form-checked-content">
+                                    <strong>Where are you located?</strong>
+                                    <small class="d-block text-body-secondary">
+                                      <svg class="bi me-1" width="1em" height="1em"><use xlink:href="#calendar-event"></use></svg>
+                                      We are not a storefront bakery, however, considering outlets in the city!
+                                    </small>
+                                  </span>
+                                </label>
+                                <label class="list-group-item d-flex gap-3">
+                                  <input class="form-check-input flex-shrink-0" type="checkbox" value="" style="font-size: 1.375em;">
+                                  <span class="pt-1 form-checked-content">
+                                    <strong>Do you deliver?</strong>
+                                    <small class="d-block text-body-secondary"><strong>
+                                      <svg class="bi me-1" width="1em" height="1em"><use xlink:href="#calendar-event"></use></svg>
+                                      We deliver in the greater Kampala area; the cost of delivery is covered by the Client!
+                                    </strong></small>
+                                  </span>
+                                </label>
+                                <label class="list-group-item d-flex gap-3">
+                                  <input class="form-check-input flex-shrink-0" type="checkbox" value="" style="font-size: 1.375em;">
+                                  <span class="pt-1 form-checked-content">
+                                    <strong>Do you take orders for delivery on same day?</strong>
+                                    <small class="d-block text-body-secondary">
+                                      <svg class="bi me-1" width="1em" height="1em"><use xlink:href="#alarm"></use></svg>
+                                      A 24hr-notice is required for bread and cookies and 72hrs-notice for cakes!
+                                    </small>
+                                  </span>
+                                </label>
+                                <label class="list-group-item d-flex gap-3 bg-body-tertiary">
+                                  <input class="form-check-input form-check-input-placeholder bg-body-tertiary flex-shrink-0 pe-none"  type="checkbox" value="" style="font-size: 1.375em;">
+                                  <span class="pt-1 form-checked-content">
+                                    <strong>What are your opening hours?</strong>
+                                    <small class="d-block text-body-secondary">
+                                      <svg class="bi me-1" width="1em" height="1em"><use xlink:href="#list-check"></use></svg>
+                                      07:00 - 17:00 hrs; Monday - Friday; 07:00 - 13:00 hrs on Saturday
+                                    </small>
+                                  </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    {% endblock %}
+
+
