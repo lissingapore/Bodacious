@@ -7,6 +7,7 @@ from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 from sqlalchemy import Integer, String, Float
+import os
 
 
 app = Flask(__name__)
@@ -18,8 +19,9 @@ class Base(DeclarativeBase):
 csrf = CSRFProtect(app)
 bootstrap = Bootstrap5(app)
 
-app.config["SECRET_KEY"] = "blownoutofproportion"
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///customer-orders.db"
+app.config["SECRET_KEY"] = os.environ.get("FLASK_KEY")
+app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DB_CONNECT_KEY", "sqlite:///customer-orders.db")
+
 
 db = SQLAlchemy(app)
 
